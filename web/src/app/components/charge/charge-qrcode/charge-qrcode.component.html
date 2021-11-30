@@ -1,0 +1,16 @@
+
+<mat-card>
+    <mat-card-title> QRcode</mat-card-title>
+    <div class="spinner">
+        <mat-spinner *ngIf = "showSpinner"></mat-spinner>
+    </div>
+    <form *ngIf = "showQrcode"> 
+        <picture width="200px">
+            <img mat-card-image src="{{qrcode.imagemQrcode}}" alt="" width="100px">
+        </picture>
+    </form> 
+    <button mat-raised-button (click)="cancel()">
+        Voltar
+    </button>
+
+</mat-card>

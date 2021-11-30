@@ -1,0 +1,14 @@
+
+table {
+    width: 100%;
+}
+
+i {
+    color: white;
+    margin: 5px;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,21 @@
+
+<mat-card>
+    <mat-card-title> Nova cobrança</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)] = "charge.devedor.nome" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço" [(ngModel)] = "charge.valor.original" name="value">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createCharge()">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>
